@@ -1,0 +1,48 @@
+#api
+
+backend/
+├── config/
+│
+├── modules/
+│   ├── usuarios/
+│   │   ├── domain/
+│   │   │   ├── entities.py
+│   │   │   ├── value_objects.py
+│   │   │   ├── services.py
+│   │   │   └── exceptions.py
+│   │   │
+│   │   ├── application/
+│   │   │   ├── use_cases/
+│   │   │   ├── commands/
+│   │   │   ├── queries/
+│   │   │   └── dto.py
+│   │   │
+│   │   ├── ports/
+│   │   │   ├── repositories.py
+│   │   │   ├── event_bus.py
+│   │   │   └── cache.py
+│   │   │
+│   │   └── infrastructure/
+│   │       ├── django/
+│   │       │   ├── models.py
+│   │       │   ├── repositories.py
+│   │       │   ├── serializers.py
+│   │       │   └── views.py
+│   │       ├── redis/
+│   │       └── kafka/
+│   │
+│   ├── facturacion/
+│   ├── clientes/
+│   ├── cuenta_corriente/
+│   ├── tesoreria/
+│   └── contabilidad/
+│
+└── manage.py
+
+activa el venv => source venv/bin/activate
+
+Crea el proyecto django el (.) crea los archivos en la carpeta raiz  => django-admin startproject app . 
+
+Ejecuta el servidor de desarrollo => python manage.py runserver
+
+crear app dentro del proyecto ==> python manage.py startapp [nombre del la app]
